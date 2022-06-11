@@ -1,6 +1,6 @@
 function compute()
 {
-    //creating variables to perform operations
+    // vars
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value
     var years = document.getElementById("years").value
@@ -8,7 +8,7 @@ function compute()
     
     var year = new Date().getFullYear()+parseInt(years);
 
-    //Conditional operation performed to check if the principle is valid or not
+    // check
     if(principal ==undefined || principal <=0){
         alert("Enter a positive number");
         document.getElementById("principal").focus();
